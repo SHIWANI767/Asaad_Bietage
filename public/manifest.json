@@ -1,0 +1,15 @@
+{
+  "name": "Bitedge App",
+  "short_name": "Bitedge",
+  "icons": [
+    {
+      "src": "/images/fav.png",
+      "type": "image/png",
+      "sizes": "62X59"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}

@@ -1,0 +1,25 @@
+# *
+User-agent: *
+Disallow: /payment-success/[hash]
+Disallow: /checkout/[id]
+Disallow: /user-profile
+Disallow: /auth/*
+Disallow: /admin
+
+# *
+User-agent: *
+Allow: /
+Allow: /about
+Allow: /price
+Allow:/exchanges
+Allow:/tutorial
+Allow:/features
+Allow: /article/[dugs]/[slug]
+Allow: /articles/[blogType]/[id]
+
+# Host
+Host: https://bitedge.app
+
+# Sitemaps
+Sitemap: https://bitedge.app/custom-sitemap.xml
+Sitemap: https://bitedge.app/sitemap.xml

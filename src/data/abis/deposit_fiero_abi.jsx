@@ -1,0 +1,200 @@
+export const DEPOSIT_FIERO_ABI = [
+  { type: "constructor", stateMutability: "nonpayable", inputs: [] },
+  {
+    type: "event",
+    name: "DepositMade",
+    inputs: [
+      { type: "address", name: "user", internalType: "address", indexed: true },
+      {
+        type: "uint256",
+        name: "amount",
+        internalType: "uint256",
+        indexed: false,
+      },
+    ],
+    anonymous: false,
+  },
+  {
+    type: "event",
+    name: "EmergencyDrain",
+    inputs: [
+      {
+        type: "address",
+        name: "admin",
+        internalType: "address",
+        indexed: true,
+      },
+      {
+        type: "uint256",
+        name: "amount",
+        internalType: "uint256",
+        indexed: false,
+      },
+    ],
+    anonymous: false,
+  },
+  {
+    type: "event",
+    name: "WalletEvent",
+    inputs: [
+      {
+        type: "address",
+        name: "wallet",
+        internalType: "address",
+        indexed: true,
+      },
+      {
+        type: "string",
+        name: "action",
+        internalType: "string",
+        indexed: false,
+      },
+      {
+        type: "uint256",
+        name: "amount",
+        internalType: "uint256",
+        indexed: false,
+      },
+    ],
+    anonymous: false,
+  },
+  {
+    type: "event",
+    name: "WithdrawalMade",
+    inputs: [
+      {
+        type: "address",
+        name: "admin",
+        internalType: "address",
+        indexed: true,
+      },
+      {
+        type: "uint256",
+        name: "amount",
+        internalType: "uint256",
+        indexed: false,
+      },
+    ],
+    anonymous: false,
+  },
+  {
+    type: "function",
+    stateMutability: "view",
+    outputs: [{ type: "address", name: "", internalType: "address" }],
+    name: "admin",
+    inputs: [],
+  },
+  {
+    type: "function",
+    stateMutability: "view",
+    outputs: [{ type: "address", name: "", internalType: "address" }],
+    name: "createWallet",
+    inputs: [{ type: "uint256", name: "nonce", internalType: "uint256" }],
+  },
+  {
+    type: "function",
+    stateMutability: "payable",
+    outputs: [],
+    name: "deposit",
+    inputs: [
+      { type: "address", name: "userDepositAddress", internalType: "address" },
+    ],
+  },
+  {
+    type: "function",
+    stateMutability: "view",
+    outputs: [
+      { type: "uint256", name: "amount", internalType: "uint256" },
+      { type: "uint256", name: "timestamp", internalType: "uint256" },
+    ],
+    name: "depositHistory",
+    inputs: [
+      { type: "address", name: "", internalType: "address" },
+      { type: "uint256", name: "", internalType: "uint256" },
+    ],
+  },
+  {
+    type: "function",
+    stateMutability: "nonpayable",
+    outputs: [],
+    name: "emergencyDrain",
+    inputs: [],
+  },
+  {
+    type: "function",
+    stateMutability: "view",
+    outputs: [
+      {
+        type: "tuple[]",
+        name: "",
+        internalType: "struct DepositManager.Deposit[]",
+        components: [
+          { type: "uint256", name: "amount", internalType: "uint256" },
+          { type: "uint256", name: "timestamp", internalType: "uint256" },
+        ],
+      },
+    ],
+    name: "getDepositHistory",
+    inputs: [{ type: "address", name: "user", internalType: "address" }],
+  },
+  {
+    type: "function",
+    stateMutability: "view",
+    outputs: [{ type: "uint256", name: "", internalType: "uint256" }],
+    name: "getLastDepositAmount",
+    inputs: [{ type: "address", name: "user", internalType: "address" }],
+  },
+  {
+    type: "function",
+    stateMutability: "view",
+    outputs: [{ type: "uint256", name: "", internalType: "uint256" }],
+    name: "getTotalDeposited",
+    inputs: [{ type: "address", name: "user", internalType: "address" }],
+  },
+  {
+    type: "function",
+    stateMutability: "view",
+    outputs: [{ type: "address[]", name: "", internalType: "address[]" }],
+    name: "getUserDepositAddresses",
+    inputs: [{ type: "address", name: "user", internalType: "address" }],
+  },
+  {
+    type: "function",
+    stateMutability: "view",
+    outputs: [{ type: "uint256", name: "", internalType: "uint256" }],
+    name: "lastDepositAmount",
+    inputs: [{ type: "address", name: "", internalType: "address" }],
+  },
+  {
+    type: "function",
+    stateMutability: "view",
+    outputs: [{ type: "uint256", name: "", internalType: "uint256" }],
+    name: "totalDeposited",
+    inputs: [{ type: "address", name: "", internalType: "address" }],
+  },
+  {
+    type: "function",
+    stateMutability: "view",
+    outputs: [{ type: "address", name: "", internalType: "address" }],
+    name: "userDepositAddresses",
+    inputs: [
+      { type: "address", name: "", internalType: "address" },
+      { type: "uint256", name: "", internalType: "uint256" },
+    ],
+  },
+  {
+    type: "function",
+    stateMutability: "view",
+    outputs: [{ type: "address", name: "", internalType: "address" }],
+    name: "wallets",
+    inputs: [{ type: "uint256", name: "", internalType: "uint256" }],
+  },
+  {
+    type: "function",
+    stateMutability: "nonpayable",
+    outputs: [],
+    name: "withdrawAll",
+    inputs: [],
+  },
+  { type: "receive", stateMutability: "payable" },
+];

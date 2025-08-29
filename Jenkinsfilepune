@@ -1,0 +1,65 @@
+pipeline {
+    agent {
+        label 'reactjs2'
+    }
+    stages {
+        stage("Print Environment Variables") {
+            steps {
+                script {
+                    env.each { k, v -> echo "${k}=${v}" }
+                }
+            }
+        }
+
+        stage("rsync") {
+            steps {
+                script {
+                    sh "rsync -rav --exclude=node_modules --delete ../development-arbitragebot-service-asad-23084151-nextjs/* administrator@49.248.38.52:/var/www/nextjs-projects/development-arbitragebot-service-asad-23084151-nextjs/"
+                }
+            }
+        }
+
+        stage("Build") {
+            steps {
+                script {
+                    sshagent(['int-nextjs']) {
+                        sh "ssh administrator@49.248.38.52 'cd /var/www/nextjs-projects/ && sudo chmod 777 -R development-arbitragebot-service-asad-23084151-nextjs'"
+                        sh "ssh administrator@49.248.38.52 'cd /var/www/nextjs-projects/development-arbitragebot-service-asad-23084151-nextjs/ && yarn'"
+                        sh "ssh administrator@49.248.38.52 'cd /var/www/nextjs-projects/development-arbitragebot-service-asad-23084151-nextjs/ && yarn run build'"
+                    }
+                }
+            }
+        }
+
+        stage("Deploy") {
+            steps {
+                script {
+                    sshagent(['int-nextjs']) {
+                        sh "ssh administrator@49.248.38.52 'sudo pm2 restart asadnextjs-2018'"
+                        sh "ssh administrator@49.248.38.52 'echo arbitragebot-asad.mobiloitte.io'"
+                    }
+                }
+            }
+        }
+    }
+
+    post {
+        success {
+            script {
+                emailext subject: "Pipeline Success Notification",
+                          body: "The pipeline has passed successfully.",
+                          to: "${env.GIT_AUTHOR_EMAIL}"
+            }
+        }
+        failure {
+            script {
+                currentBuild.result = 'FAILURE'
+                emailext subject: "Pipeline Failure Notification",
+                          body: "The pipeline has failed. Please check the logs.",
+                          to: "${env.GIT_AUTHOR_EMAIL}",
+                          attachLog: true
+            }
+        }
+    }
+}
+

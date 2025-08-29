@@ -1,0 +1,11 @@
+import { Box } from "@mui/material";
+import React from "react";
+import BotSetting from "../BotSetting";
+
+const AutoTradeSettingPage = ({ botType }) => {
+  console.log("botTypebotType", botType);
+
+  return <BotSetting botType={botType} />;
+};
+
+export default AutoTradeSettingPage;

@@ -1,0 +1,528 @@
+@media (max-width: 1440px) {
+  .grid-container {
+    grid-template-columns: auto auto auto;
+  }
+
+  .scheduleBox {
+    iframe {
+      min-height: 424px;
+      width: 95% !important;
+
+      div {
+        padding-top: 0px !important;
+      }
+    }
+
+
+  }
+}
+
+@media (max-width: 1366px) {
+  .BuildCardBox {
+    min-height: 366px !important;
+  }
+}
+
+@media (max-width: 1280px) {
+  .borderImageBoxLeft {
+    left: 36%;
+  }
+
+  .paperBox1 {
+    padding: 10px;
+  }
+
+  .borderImageBoxRight {
+    position: absolute;
+    right: 36%;
+  }
+
+  .greenShadeBox {
+    right: 0% !important;
+  }
+
+  .resend {
+    margin-right: -43px !important;
+    margin-top: 10px !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  .leftBox {
+    margin-left: 0px;
+  }
+
+  .profiledataname {
+    margin-right: 40px;
+  }
+
+  .nameTexttopbar1 {
+    font-size: 19px !important;
+  }
+
+  .demobookbutton {
+    font-size: 10px !important;
+    margin-right: 4px !important;
+    padding: 9px 14px !important;
+  }
+
+}
+
+@media (max-width: 1024px) {
+  .pricemain-landing2 {
+    margin-top: -24px !important;
+  }
+
+
+  .roadmapBox {
+    position: relative;
+    bottom: 0;
+  }
+
+  .login-button {
+    // margin-right: 25px !important;
+  }
+
+  .menuButton {
+    // color: #fff !important;
+    padding: 6px 12px !important;
+    font-weight: 400 !important;
+  }
+
+  .greenShadeBox {
+    right: 0% !important;
+    width: 500px;
+    height: 500px;
+  }
+
+  .secureBanner {
+    min-height: 411.54px;
+  }
+
+  .mainConatiner {
+    padding: 0px 30px !important;
+  }
+}
+
+@media (max-width: 991px) {
+  .footercenterImg {
+    display: none;
+  }
+
+  .grid-container {
+    grid-template-columns: auto auto;
+  }
+
+  .popularBox .secureCrad {
+    height: auto;
+  }
+
+  .secureBanner {
+    min-height: "514.54px";
+    background-position: -38px 1px;
+  }
+}
+
+@media (max-width: 899px) {
+  .roadBorderBox {
+    display: none;
+  }
+
+  .borderroadmapBox {
+    margin-top: 20px !important;
+    border-bottom: 1px dashed rgb(45, 47, 55);
+  }
+
+  .descriptionroadText {
+    max-width: 100% !important;
+  }
+
+  .numbericonBox1 {
+    display: block !important;
+    background: #2d2f37 !important;
+    font-size: 13px !important;
+    line-height: 24px !important;
+    border: 1px solid #ffffff14 !important;
+    height: 45px !important;
+    width: 45px !important;
+  }
+
+  .numbericonBox {
+    display: none !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .profiledataname {
+    margin-right: 40px;
+  }
+
+  .scheduleBox {
+    iframe {
+      width: 263px !important;
+      min-height: 382px !important;
+      padding: 0px;
+    }
+  }
+
+  .grid-container {
+    grid-template-columns: auto;
+  }
+
+  .priceText {
+    font-size: 15px !important;
+  }
+
+  .usernameText {
+    display: none;
+  }
+
+  .heading-name {
+    font-size: 16px !important;
+    line-height: 30px !important;
+    font-weight: 300 !important;
+  }
+
+  .MuiToolbar-root {
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+  }
+
+  .pricemain-landing2 {
+    margin-top: -50px !important;
+  }
+
+  .roadmapBox {
+    position: relative;
+    bottom: 0;
+  }
+
+  .borderDashed {
+    border-bottom: 1px dashed rgba(25, 29, 19, 0.2) !important;
+    position: relative !important;
+    z-index: 999 !important;
+    top: 183px !important;
+    display: block;
+  }
+
+  .borderDashed1 {
+    border-bottom: 1px dashed rgba(25, 29, 19, 0.2) !important;
+    position: relative !important;
+    z-index: 999 !important;
+    top: 403px !important;
+    display: block;
+  }
+
+  .exchangemainBoxNew {
+    .MuiOutlinedInput-input {
+      padding: 0px !important;
+    }
+  }
+
+  .tradeBiedgeText {
+    margin-bottom: 30px;
+  }
+
+  .borderImageBoxLeft {
+    display: none;
+  }
+
+  .borderImageBoxRight {
+    display: none;
+  }
+
+  .priceButtonBox {
+    padding: 5px 15px !important;
+    font-size: 12px !important;
+  }
+
+  .logoutButtonNew {
+    font-size: 12px !important;
+    margin-right: 34px !important;
+    margin-left: 10px !important;
+  }
+
+  .bannerTextBoxvisible {
+    margin-bottom: 83px;
+  }
+
+  .liveleftBox {
+    padding-left: 0px !important;
+    padding-top: 0px !important;
+  }
+
+  .charTabBox {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .pricemain-landing {
+    margin-top: 80px !important;
+  }
+
+  .traclLiveButtonBox {
+    top: 56px !important;
+    right: 10px !important;
+  }
+
+  .optPositionBoxleft {
+    left: 13%;
+    bottom: 42%;
+  }
+
+  .containerloginBox {
+    padding: 0px !important;
+  }
+
+  .optPositionBox {
+    right: 13%;
+    bottom: 42%;
+  }
+
+  .videoBox video {
+    margin-top: auto;
+  }
+
+  .autocompleBox {
+    margin-right: 0px !important;
+    margin-bottom: 16px;
+  }
+
+  .responsivefilter {
+    flex-wrap: wrap;
+  }
+
+  .logoLeftImg {
+    // display: none;
+  }
+
+  .dashTopbarres {
+    justify-content: flex-end;
+  }
+
+  .bannerlanding p {
+    width: auto !important;
+  }
+
+  .popularBox {
+    padding: 50px 0;
+    position: relative;
+  }
+
+  .buildBox {
+    padding: 90px 0;
+  }
+
+  .curveLeft {
+    display: none;
+  }
+
+  .automatedSection {
+    overflow: hidden;
+  }
+
+  .SecureSection {
+    margin-top: 100px;
+  }
+
+  .clientBox {
+    width: auto !important;
+    transform: rotate(0deg);
+    margin-top: -51px;
+
+    img {
+      width: auto;
+      max-width: 40px !important;
+    }
+  }
+
+  .clientBox img {
+    width: auto;
+    max-width: 130px;
+    margin: 10px;
+  }
+
+  .lineanimation {
+    display: none;
+  }
+
+  .steperscrollBox {
+    min-width: 100px;
+    overflow: auto;
+    width: calc(100% - -2px);
+  }
+
+  .chatButton {
+    padding: 7px 16px !important;
+  }
+
+  .gradientTextborder {
+    padding: 2px !important;
+  }
+
+  .buttonChat .iconBox {
+    width: 55px !important;
+    height: 55px !important;
+    padding: 12px;
+  }
+
+  .dropZoneBox {
+    padding: 10px 0px;
+  }
+
+  .tableContainer .MuiTableCell-root {
+    min-width: auto !important;
+  }
+
+  .filtersButton {
+    margin-left: 0px !important;
+    margin-top: 15px !important;
+  }
+
+  .sortButton {
+    margin-top: 15px !important;
+  }
+
+  .dropContantBox {
+    padding: 41px 0 0 !important;
+  }
+
+  .dropZoneBox .viewImg {
+    left: 0 !important;
+  }
+
+  .MuiDialogContent-root {
+    padding: 15px;
+  }
+
+  .createvariantButton1 {
+    font-size: 12px !important;
+  }
+
+  .createvariantButton {
+    margin: 7px !important;
+  }
+
+  .firsrdetailsText {
+    width: 105px !important;
+  }
+
+  .multipleButton {
+    flex-wrap: wrap !important;
+  }
+
+  .carduserBox {
+    padding: 40px 0;
+  }
+
+  .frameBox {
+    order: 0;
+    background: transparent !important;
+  }
+
+  .frameBox1 {
+    order: 1;
+  }
+
+  .detailsImg {
+    max-width: 200px;
+  }
+
+  .resend {
+    margin-right: -138px !important;
+    margin-top: 10px !important;
+  }
+
+  .socialButtonres {
+    margin-left: 0px !important;
+  }
+
+  .socialButton {
+    padding: 10px 24px !important;
+    font-size: 12px !important;
+    min-width: 80px !important;
+
+    img {
+      width: 20px !important;
+    }
+  }
+
+  .mainBox1 {
+    padding: 68px 0px 0px;
+  }
+
+  .talkimg {
+    width: auto;
+    max-width: 200px !important;
+  }
+
+  .PhoneInput {
+    width: calc(100% - 0px) !important;
+  }
+
+  .sliderBoxres {
+    margin: 42px 0 80px !important;
+  }
+
+  .copyBox {
+    margin-top: 10px;
+  }
+
+  .copyRightBox1 {
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 26px 0 !important;
+  }
+
+  .mainBox .sliderBox input {
+    // width: calc(100% - 0px);
+    margin: 10px;
+  }
+
+  .footerlogo1 {
+    width: 70px !important;
+  }
+
+  .aspectborder {
+    display: none;
+  }
+
+  .aspectbutton {
+    right: 0;
+    top: 25%;
+  }
+
+  .planslider {
+    width: calc(100% - 0px) !important;
+  }
+
+  .staticFooter {
+    flex-direction: column;
+  }
+
+  .footerBtn {
+    font-size: 12px !important;
+    margin-bottom: 10px !important;
+  }
+
+  .mainFooterBox {
+    padding: 20px 35px;
+  }
+
+  .mainContainer {
+    padding: 0 15px !important;
+  }
+
+  // .authContainer {
+  //   min-width: 270px !important;
+  //   margin: 0px auto !important;
+  //   width: 94%;
+  //   max-width: 540px;
+  // }
+}
+
+@media (max-width: 425px) {
+  .authContainer {
+    padding: 20px;
+  }
+}
